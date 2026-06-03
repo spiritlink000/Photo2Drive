@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.114679640018-nfrj12im4hbv49f9rfm4c5oosiv1thdb</string>
+			</array>
+		</dict>
+	</array>
+	<key>GIDClientID</key>
+	<string>114679640018-nfrj12im4hbv49f9rfm4c5oosiv1thdb.apps.googleusercontent.com</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app needs access to your photo library to select photos for uploading to Google Drive.</string>
+</dict>
+</plist>

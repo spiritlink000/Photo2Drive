@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		64CCA9D72EDAF9F900D63664 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 64CCA9D62EDAF9F900D63664 /* GoogleSignIn */; };
+		64CCA9D92EDAF9F900D63664 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 64CCA9D82EDAF9F900D63664 /* GoogleSignInSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		64CCA99A2EDAEEB700D63664 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +34,22 @@
 		64CCA9A32EDAEEB700D63664 /* Photo2driveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Photo2driveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		64CCA9D52EDAF73000D63664 /* Exceptions for "Photo2drive" folder in "Photo2drive" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 64CCA98B2EDAEEB600D63664 /* Photo2drive */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		64CCA98E2EDAEEB600D63664 /* Photo2drive */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				64CCA9D52EDAF73000D63664 /* Exceptions for "Photo2drive" folder in "Photo2drive" target */,
+			);
 			path = Photo2drive;
 			sourceTree = "<group>";
 		};
@@ -52,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64CCA9D72EDAF9F900D63664 /* GoogleSignIn in Frameworks */,
+				64CCA9D92EDAF9F900D63664 /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +132,8 @@
 			);
 			name = Photo2drive;
 			packageProductDependencies = (
+				64CCA9D62EDAF9F900D63664 /* GoogleSignIn */,
+				64CCA9D82EDAF9F900D63664 /* GoogleSignInSwift */,
 			);
 			productName = Photo2drive;
 			productReference = 64CCA98C2EDAEEB600D63664 /* Photo2drive.app */;
@@ -195,6 +217,9 @@
 			);
 			mainGroup = 64CCA9832EDAEEB600D63664;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				64CCA9D32EDAF65900D63664 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 64CCA98D2EDAEEB600D63664 /* Products */;
 			projectDirPath = "";
@@ -400,6 +425,8 @@
 				DEVELOPMENT_TEAM = 4J89GAYXW2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Photo2drive/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs access to your photo library to select photos for uploading to\n  Google Drive.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -432,6 +459,8 @@
 				DEVELOPMENT_TEAM = 4J89GAYXW2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Photo2drive/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs access to your photo library to select photos for uploading to\n  Google Drive.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -578,6 +607,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		64CCA9D32EDAF65900D63664 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		64CCA9D62EDAF9F900D63664 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64CCA9D32EDAF65900D63664 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		64CCA9D82EDAF9F900D63664 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64CCA9D32EDAF65900D63664 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 64CCA9842EDAEEB600D63664 /* Project object */;
 }
